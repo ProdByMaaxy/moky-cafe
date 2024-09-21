@@ -12,6 +12,7 @@ body{
 html{
     scroll-behavior: smooth;
     scrollbar-color: #5B3A29 #F8E5C2;
+    scrollbar-width: thin;
 }
 a{
     text-decoration: none;
@@ -89,7 +90,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 75px;
+    margin-top: 150px;
     padding-left: 40px;
     padding-right: 40px;
 
@@ -175,7 +176,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 75px;
+    margin-top: 150px;
     padding-left: 40px;
     padding-right: 40px;
 }
@@ -252,4 +253,84 @@ header{
 #find-out:hover{
     background-color:#E26E5C;
     color: #F8F3E7;
+}
+/*Third Section */
+.third-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.third-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.19);
+    padding: 1rem;
+}
+.third-txt-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 25px;
+    padding: 3rem;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.19);
+}
+.third-txt-container h1{
+    font-size: 3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.third-txt-container p{
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+.cat-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 2rem;
+    width: 100%;
+    border-radius: 25px;
+    padding: 2rem;
+
+}
+.cat{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    padding: 1rem;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.19);
+}
+.cat h2{
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+#cat-illu{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    cursor: pointer;
+}
+#cat-illu:hover{
+    transform: scale(1.05);
 }
