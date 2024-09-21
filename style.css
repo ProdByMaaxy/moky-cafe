@@ -52,11 +52,8 @@ header{
     align-items: center;
     width: 100%;
 }
-.nav-links li{
-    padding: 1rem;
-}
 .nav-links a{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 800;
     text-transform: uppercase;
     padding-left: 10px;
@@ -158,7 +155,7 @@ header{
     background-color: #F5A399;
     color: #5B3A29;
     transition-property: background-color, color;
-    transition-duration: 0.3s;
+    transition-duration: 0.2s;
     transition-timing-function: ease;
     transition-delay: 0s;
     margin-top: 2rem;
@@ -243,7 +240,7 @@ header{
     background-color: #F5A399;
     color: #5B3A29;
     transition-property: background-color, color;
-    transition-duration: 0.3s;
+    transition-duration: 0.2s;
     transition-timing-function: ease;
     transition-delay: 0s;
     margin-top: 2rem;
@@ -333,4 +330,59 @@ header{
 }
 #cat-illu:hover{
     transform: scale(1.05);
+}
+/* Footer Section */
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.footer-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.19);
+    padding: 1rem;
+}
+.footer-content{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 50px;
+    padding: 3rem;
+}
+.footer-content h1{
+    font-size: 3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+.footer-content p, a{
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    transition-property: transform text-decoration;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+.footer-content a:hover{
+    text-decoration: underline;
+    transform: translateY(-2px);
+}
+i{
+    font-size: 1.6rem;
+    margin-right: 1rem;
 }
