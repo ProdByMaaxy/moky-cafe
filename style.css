@@ -147,24 +147,109 @@ header{
     padding: 3rem;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.19);
 }
-button{
+#read-more{
     width: 100%;
     padding: 1rem;
     font-size: 1.6rem;
     font-weight: 800;
     text-transform: uppercase;
     border-radius: 25px;
-    background-color: #5B3A29;
-    color: #F8E5C2;
+    background-color: #F5A399;
+    color: #5B3A29;
     transition-property: background-color, color;
     transition-duration: 0.3s;
     transition-timing-function: ease;
     transition-delay: 0s;
     margin-top: 2rem;
-
+    border: 1px solid #5B3A29;
+    cursor: pointer;
 }
-button:hover{
-    background-color: #F8E5C2;
+#read-more:hover{
+    background-color:#E26E5C;
+    color: #F8F3E7;
+}
+/* Menu Section */
+.second-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.second-section h1{
+    font-size: 3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.second-section p{
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+.second-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.19);
+    padding: 1rem;
+}
+.second-content{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 50px;
+    padding: 3rem;
+}
+.second-image{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+#drink{
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    border-radius: 25px;
+}
+.second-txt{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 25px;
+    padding: 3rem;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.19);
+}
+#find-out{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-radius: 25px;
+    background-color: #F5A399;
     color: #5B3A29;
+    transition-property: background-color, color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    margin-top: 2rem;
+    cursor: pointer;
+    border: 1px solid #5B3A29;
 }
-/* About Section */
+#find-out:hover{
+    background-color:#E26E5C;
+    color: #F8F3E7;
+}
