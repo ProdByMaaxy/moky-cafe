@@ -20,6 +20,7 @@ a{
 ul{
     list-style: none;
 }
+/* Navbar */
 header{
     display: flex;
     flex-direction: column;
@@ -81,20 +82,20 @@ header{
 #logo:hover{
     transform: scale(1.05);
 }
+/* Presentation Section */
 .first-section{
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 75px;
     padding-left: 40px;
     padding-right: 40px;
 
 }
 .main-container{
     width: 100%;
-    height: 50vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -104,7 +105,7 @@ header{
     padding: 1rem;
 }
 .main-image{
-    width: 40%;
+    width: 35%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -117,7 +118,7 @@ header{
     border-radius: 25px;
 }
 .main-content{
-    width: 60%;
+    width: 65%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -144,7 +145,7 @@ header{
     justify-content: center;
     border-radius: 25px;
     padding: 3rem;
-    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.19);
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.19);
 }
 button{
     width: 100%;
@@ -166,3 +167,4 @@ button:hover{
     background-color: #F8E5C2;
     color: #5B3A29;
 }
+/* About Section */
