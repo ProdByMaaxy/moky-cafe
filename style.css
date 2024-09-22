@@ -21,6 +21,9 @@ a{
 ul{
     list-style: none;
 }
+/*Responsive big screens */
+@media (min-width: 1440px){
+}
 /* Navbar */
 header{
     display: flex;
@@ -28,14 +31,14 @@ header{
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 0 1rem;
+    padding: 0 2rem;
 }
 .nav-container{
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 1rem 0;
+    margin: 2rem 0;
     border-radius: 75px;
     box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.19);
 }
@@ -48,38 +51,44 @@ header{
 .nav-links ul{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     width: 100%;
+    padding: 0 1rem;
 }
 .nav-links a{
-    font-size: 1.4rem;
-    font-weight: 800;
+    font-size: 1.2rem;
+    font-weight: 700;
     text-transform: uppercase;
     padding-left: 10px;
     padding-right: 10px;
 }
 .links{
-    transition-property: background-color, color;
-    transition-duration: 0.3s;
+    background-color: #F8E5C2;
+    color: #5B3A29;
+    transition-property: background-color,transform;
+    transition-duration: 0.2s;
     transition-timing-function: ease;
-    border-radius: 25px;
+    transition-delay: 0s;
+    border-radius: 75px;
 }
 .links:hover{
-    color: #F8E5C2;
+    transform: translateY(-2px);
     background-color: #5B3A29;
-    border-radius: 25px;
+    color: #F8E5C2;
 }
 #logo{
-    width: 275px;
+    width: 150px;
     transition-property: transform;
     transition-duration: 0.3s;
     transition-timing-function: ease;
     transition-delay: 0s;
+    cursor: pointer;
 }
 #logo:hover{
     transform: scale(1.05);
 }
+
 /* Presentation Section */
 .first-section{
     width: 100%;
@@ -87,9 +96,9 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
-    padding-left: 40px;
-    padding-right: 40px;
+    margin-top: 200px;
+    padding-left: 50px;
+    padding-right: 50px;
 
 }
 .main-container{
@@ -100,15 +109,15 @@ header{
     align-items: center;
     border-radius: 25px;
     box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.19);
-    padding: 1rem;
 }
 .main-image{
-    width: 35%;
+    width: 40%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 25px;
+    padding: 0 2rem;
 }
 .main-image img{
     width: -webkit-fill-available;
@@ -116,23 +125,23 @@ header{
     border-radius: 25px;
 }
 .main-content{
-    width: 65%;
+    width: 60%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     border-radius: 50px;
-    padding: 3rem;
+    padding: 2rem;
 }
 .main-content h1{
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 1rem;
 }
 .main-content p{
-    font-size: 1.6rem;
+    font-size: 1.1rem;
     font-weight: 400;
     margin-bottom: 1rem;
 }
@@ -142,19 +151,19 @@ header{
     flex-direction: column;
     justify-content: center;
     border-radius: 25px;
-    padding: 3rem;
+    padding: 2rem;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.19);
 }
 #read-more{
     width: 100%;
     padding: 1rem;
-    font-size: 1.6rem;
-    font-weight: 800;
+    font-size: 1rem;
+    font-weight: 700;
     text-transform: uppercase;
     border-radius: 25px;
     background-color: #F5A399;
     color: #5B3A29;
-    transition-property: background-color, color;
+    transition-property: background-color;
     transition-duration: 0.2s;
     transition-timing-function: ease;
     transition-delay: 0s;
@@ -164,8 +173,9 @@ header{
 }
 #read-more:hover{
     background-color:#E26E5C;
-    color: #F8F3E7;
+    color:#F8E5C2;
 }
+
 /* Menu Section */
 .second-section{
     width: 100%;
@@ -173,20 +183,9 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
-    padding-left: 40px;
-    padding-right: 40px;
-}
-.second-section h1{
-    font-size: 3rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-}
-.second-section p{
-    font-size: 1.6rem;
-    font-weight: 400;
-    margin-bottom: 1rem;
+    margin-top: 200px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 .second-container{
     width: 100%;
@@ -197,19 +196,20 @@ header{
     border-radius: 25px;
     box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.19);
     padding: 1rem;
+
 }
 .second-content{
-    width: 50%;
+    width: 75%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     border-radius: 50px;
-    padding: 3rem;
+    padding: 2rem;
 }
 .second-image{
-    width: 50%;
+    width: 25%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -221,36 +221,48 @@ header{
     height: -webkit-fill-available;
     border-radius: 25px;
 }
+.second-content h1{
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.second-content p{
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
 .second-txt{
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     border-radius: 25px;
-    padding: 3rem;
+    padding: 2rem;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.19);
 }
 #find-out{
     width: 100%;
     padding: 1rem;
-    font-size: 1.6rem;
-    font-weight: 800;
+    font-size: 1rem;
+    font-weight: 700;
     text-transform: uppercase;
     border-radius: 25px;
     background-color: #F5A399;
     color: #5B3A29;
-    transition-property: background-color, color;
+    transition-property: background-color;
     transition-duration: 0.2s;
     transition-timing-function: ease;
     transition-delay: 0s;
     margin-top: 2rem;
-    cursor: pointer;
     border: 1px solid #5B3A29;
+    cursor: pointer;
 }
 #find-out:hover{
     background-color:#E26E5C;
-    color: #F8F3E7;
+    color: #F8E5C2;
 }
+
 /*Third Section */
 .third-section{
     width: 100%;
@@ -258,9 +270,9 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
-    padding-left: 40px;
-    padding-right: 40px;
+    margin-top: 200px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 .third-container{
     width: 100%;
@@ -283,13 +295,13 @@ header{
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.19);
 }
 .third-txt-container h1{
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 1rem;
 }
 .third-txt-container p{
-    font-size: 1.6rem;
+    font-size: 1.1rem;
     font-weight: 400;
     margin-bottom: 1rem;
 }
@@ -309,28 +321,28 @@ header{
     justify-content: center;
     align-items: center;
     border-radius: 25px;
-    padding: 1rem;
+    padding: 1.5rem;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.19);
 }
 .cat h2{
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     font-weight: 800;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 1.5rem;
 }
 #cat-illu{
     width: 100%;
     height: 100%;
     border-radius: 25px;
     transition-property: transform;
-    transition-duration: 0.3s;
+    transition-duration: 0.2s;
     transition-timing-function: ease;
     transition-delay: 0s;
     cursor: pointer;
 }
 #cat-illu:hover{
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
+
 /* Footer Section */
 footer{
     width: 100%;
@@ -338,8 +350,8 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
-    margin-bottom: 100px;
+    margin-top: 200px;
+    margin-bottom: 50px;
     padding-left: 40px;
     padding-right: 40px;
 }
@@ -360,17 +372,16 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    border-radius: 50px;
-    padding: 3rem;
+    padding: 1rem;
 }
 .footer-content h1{
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-weight: 800;
     text-transform: uppercase;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 .footer-content p, a{
-    font-size: 1.6rem;
+    font-size: 1.1rem;
     font-weight: 400;
     margin-bottom: 1rem;
     transition-property: transform text-decoration;
@@ -383,6 +394,6 @@ footer{
     transform: translateY(-2px);
 }
 i{
-    font-size: 1.6rem;
+    font-size: 1.1rem;
     margin-right: 1rem;
 }
